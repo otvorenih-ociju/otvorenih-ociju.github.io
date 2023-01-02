@@ -1,4 +1,5 @@
-### Hi there 👋
+### Knjiga Otvorenih Оčiju
+### Autor: Kosto Albijanić👋
 
 <!--
 **otvorenih-ociju/otvorenih-ociju** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
