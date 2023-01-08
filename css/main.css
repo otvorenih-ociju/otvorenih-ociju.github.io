@@ -1,0 +1,621 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@font-face {
+  font-family: "mirosav";
+  src: url("/fonts/MIROSAV1.TTF");
+}
+body {
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #4c527d;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: "mirosav", sans-serif;
+    color: #1c1e2e;
+    font-weight: bold;
+}
+a.theme-link {
+    color: #1c1e2e;
+    text-decoration: underline;
+    -webkit-text-decoration-color: rgba(28, 30, 46, 0.3);
+    text-decoration-color: rgba(28, 30, 46, 0.3);
+}
+a.theme-link:hover {
+    color: #ed6524;
+    -webkit-text-decoration-color: rgba(237, 101, 36, 0.8);
+    text-decoration-color: rgba(237, 101, 36, 0.8);
+}
+.btn {
+    font-weight: 600;
+    padding: 0.875rem 2.5rem;
+    transition: all 0.4s ease-in-out;
+    border-radius: 2rem;
+    border: none;
+}
+@media (prefers-reduced-motion: reduce) {
+    .btn {
+        transition: none;
+    }
+}
+.btn:hover,
+.btn:active,
+.btn:focus {
+    box-shadow: 0 10px 20px -4px rgba(0, 0, 0, 0.05);
+}
+.btn-submit {
+    border-radius: 0.25rem;
+    padding: 0.875rem 1.5rem;
+}
+.btn:focus,
+.btn.focus {
+    box-shadow: none !important;
+}
+.btn-primary {
+    background: #ed6524;
+    color: #fff;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background: #e55713;
+    color: #fff;
+}
+.btn-secondary {
+    background: white;
+    border: 2px solid #ed6524;
+    color: #ed6524;
+}
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus,
+.btn-secondary:not(:disabled):not(.disabled):active {
+    background: #ed6524;
+    border: 2px solid #ed6524;
+    color: white;
+}
+.btn-light {
+    background: #f6f8fc;
+    color: #ed6524;
+}
+.btn-light:hover {
+    background: #f6f8fc;
+    color: #ed6524;
+}
+.form-control {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+    height: 56px;
+    border-color: #e3e9f6;
+}
+.form-control:focus {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+.theme-bg-light {
+    background: #f6f8fc;
+}
+.theme-bg-dark {
+    background: #1c1e2e;
+}
+.theme-bg-primary {
+    background: #ed6524;
+}
+.theme-bg-light-gradient {
+    background-image: linear-gradient(to bottom, #f6f8fc 0%, #fff 70%);
+}
+#topcontrol {
+    transition: all 0.4s ease-in-out;
+    background: #1c1e2e;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    z-index: 30;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    padding-top: 0.5rem;
+    font-weight: 300;
+    font-size: 1rem;
+}
+@media (prefers-reduced-motion: reduce) {
+    #topcontrol {
+        transition: none;
+    }
+}
+#topcontrol:hover {
+    background: #2f334e;
+    color: #fff;
+}
+.border-radius-0 {
+    border-radius: 0;
+}
+.font-style-normal {
+    font-style: normal !important;
+}
+.single-col-max {
+    max-width: 760px;
+}
+.site-logo .logo-text {
+    color: #1c1e2e;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.footer .copyright {
+    font-size: 0.875rem;
+}
+.section-heading {
+    font-size: 2.5rem;
+}
+.section-intro {
+    font-size: 1.25rem;
+}
+.hero-section .headline {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.hero-section .subheadline {
+    font-size: 1.25rem;
+}
+.hero-quotes .quote {
+    position: relative;
+    border-left: 4px solid #f5a782;
+    font-style: italic;
+}
+.hero-quotes .quote:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #f6f8fc;
+    position: absolute;
+    bottom: -10px;
+    margin-left: -10px;
+    left: 2rem;
+}
+.hero-quotes .source {
+    vertical-align: middle;
+    color: #6f75a7;
+    font-size: 0.875rem;
+}
+.hero-quotes .source-profile {
+    width: 60px;
+    height: 60px;
+}
+.hero-quotes .carousel-indicators {
+    bottom: -4rem;
+}
+.hero-quotes .carousel-indicators li {
+    border: none;
+    background-color: #4c527d;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.book-cover-holder {
+    position: relative;
+}
+.book-cover-holder .book-badge {
+    position: absolute;
+    right: 0;
+    top: -2rem;
+    width: 120px;
+    height: 120px;
+    background: #5cb377;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-family: "mirosav", sans-serif;
+    padding-top: 34px;
+    font-size: 1.375rem;
+    line-height: 1;
+    font-weight: bold;
+}
+.benefits-section .item-inner {
+    height: 100%;
+}
+.benefits-section .item-icon {
+    font-size: 3rem;
+    color: #ed6524;
+}
+.benefits-section .item-heading {
+    font-size: 1.125rem;
+}
+.content-section .key-points-list {
+    font-size: 1.125rem;
+}
+.content-section .key-points-list li {
+    margin-bottom: 1rem;
+}
+.content-section .fa-check-circle {
+    color: #7fcdb8;
+}
+.audience-section .audience {
+    max-width: 500px;
+}
+.audience-section .item {
+    margin-bottom: 1.5rem;
+}
+.audience-section .item-title {
+    font-size: 1.125rem;
+}
+.audience-section .item-icon {
+    font-size: 1.25rem;
+    color: #7fcdb8;
+}
+.reviews-section .item-inner {
+    height: 100%;
+    position: relative;
+}
+.reviews-section .icon-holder {
+    position: absolute;
+    left: 50%;
+    top: -18px;
+    margin-left: -18px;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: #f5a782;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 6px;
+}
+.reviews-section .source-profile {
+    width: 60px;
+}
+.reviews-section .source-info {
+    font-size: 0.875rem;
+}
+.reviews-section .quote {
+    font-style: italic;
+}
+.author-section {
+    color: #fff;
+}
+.author-section .author-pic {
+    width: 150px;
+    height: 150px;
+}
+.author-section .social-list li {
+    background: rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    border-radius: 50%;
+    padding-top: 6px;
+}
+.author-section .social-list li:hover {
+    background: rgba(0, 0, 0, 0.15);
+}
+.author-section .social-list a {
+    color: #fff;
+}
+.theme-bg-primary a.theme-link {
+    color: #fff;
+    text-decoration: underline;
+    -webkit-text-decoration-color: rgba(255, 255, 255, 0.5);
+    text-decoration-color: rgba(255, 255, 255, 0.5);
+}
+.theme-bg-primary a.theme-link:hover {
+    color: #fff;
+    -webkit-text-decoration-color: #fff;
+    text-decoration-color: #fff;
+}
+@media (max-width: 575.98px) {
+    .hero-quotes .quote:after {
+        left: 50%;
+        margin-left: -10px;
+    }
+    .reviews-section .source-profile {
+        margin-bottom: 0.5rem;
+    }
+    .form-inline .form-control {
+        width: 200px;
+    }
+}
+@media (max-width: 991.98px) {
+    .section-heading {
+        font-size: 1.75rem;
+    }
+    .section-intro {
+        font-size: 1.125rem;
+    }
+    .hero-section .headline {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .hero-section .subheadline {
+        font-size: 1.125rem;
+    }
+    .book-cover-holder .book-badge {
+        width: 100px;
+        height: 100px;
+        padding-top: 25px;
+        font-size: 1.25rem;
+    }
+}
+@media (min-width: 576px) {
+    .form-inline .form-control {
+        width: 400px;
+    }
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
