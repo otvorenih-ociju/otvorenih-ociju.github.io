@@ -88,7 +88,7 @@ textarea {
    ========================================================================== */
 @font-face {
   font-family: "mirosav";
-  src: url("/fonts/MIROSAV1.TTF");
+  src: url("../fonts/MIROSAV1.TTF");
 }
 body {
     font-family: "Roboto", sans-serif;
@@ -234,16 +234,63 @@ a.theme-link:hover {
 .single-col-max {
     max-width: 760px;
 }
-.site-logo .logo-text {
+
+.site-logo {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top:40px;
     color: #1c1e2e;
     font-size: 1.5rem;
     font-weight: bold;
+    background-image: url("../img/whitish-bg.jpg");
+    padding-bottom: 30px;
+    padding-top:30px;
+    height:40vh;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+
+
 }
+.logo-text{
+    color:darkgoldenrod;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.void {
+    height: 10vh;
+    width: 100%;
+}
+
+
+.site-logo h1{
+    letter-spacing: 5px;
+    font-size: 3rem;
+    font-weight: bold;
+    background-image: linear-gradient(
+            to right,
+            #f3d520 0,
+            #cb9b51 100%,
+            #f6e27a 45%,
+            #f6f2c0 50%,
+            #f6e27a 55%,
+            #cb9b51 78%,
+            #fff502 100%
+    );
+    color:transparent;
+    -webkit-background-clip:text;
+    text-shadow: 2px 5px 5px rgba(255, 255, 255, 0.8);
+}
+
 .footer .copyright {
     font-size: 0.875rem;
 }
 .section-heading {
     font-size: 2.5rem;
+    color: #4f74be;
 }
 .section-intro {
     font-size: 1.25rem;
@@ -257,7 +304,7 @@ a.theme-link:hover {
 }
 .hero-quotes .quote {
     position: relative;
-    border-left: 4px solid #f5a782;
+    border-left: 4px solid #e5672e;
     font-style: italic;
 }
 .hero-quotes .quote:after {
@@ -287,7 +334,7 @@ a.theme-link:hover {
 }
 .hero-quotes .carousel-indicators li {
     border: none;
-    background-color: #4c527d;
+    background-color: #4a527e;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -303,7 +350,16 @@ a.theme-link:hover {
     top: -2rem;
     width: 120px;
     height: 120px;
-    background: #FFD700;
+    background-image: linear-gradient(
+            to right,
+            #f3d520 0,
+            #cb9b51 100%,
+            #f6e27a 45%,
+            #f6f2c0 50%,
+            #f6e27a 55%,
+            #cb9b51 78%,
+            #fff502 100%
+    );
     border-radius: 50%;
     text-align: center;
     color: #fff;
@@ -312,7 +368,6 @@ a.theme-link:hover {
     padding-top: 34px;
     font-size: 1.375rem;
     line-height: 1;
-    font-weight: bold;
 }
 .benefits-section .item-inner {
     height: 100%;
@@ -370,8 +425,18 @@ a.theme-link:hover {
 .reviews-section .source-info {
     font-size: 0.875rem;
 }
-.reviews-section .quote {
+.reviews-section {
     font-style: italic;
+}
+
+blockquote{
+    font-family: mirosav, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #f3d520;
+    letter-spacing: 0.5px;
+    text-shadow: 1.2px 1.2px 1.2px red;
+
 }
 .author-section {
     color: #fff;
@@ -405,6 +470,8 @@ a.theme-link:hover {
     -webkit-text-decoration-color: #fff;
     text-decoration-color: #fff;
 }
+
+
 @media (max-width: 575.98px) {
     .hero-quotes .quote:after {
         left: 50%;
@@ -415,6 +482,12 @@ a.theme-link:hover {
     }
     .form-inline .form-control {
         width: 200px;
+    }
+    .logo-text{
+        color:darkgoldenrod;
+        font-size: 0.8rem;
+        font-weight: bold;
+
     }
 }
 @media (max-width: 991.98px) {
@@ -435,8 +508,18 @@ a.theme-link:hover {
         width: 100px;
         height: 100px;
         padding-top: 25px;
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
+    blockquote{
+        font-size: 1.3em;
+    }
+    .logo-text{
+        color:darkgoldenrod;
+        font-size: 1rem;
+        font-weight: bold;
+
+    }
+
 }
 @media (min-width: 576px) {
     .form-inline .form-control {
