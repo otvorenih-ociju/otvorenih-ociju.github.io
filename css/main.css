@@ -244,7 +244,6 @@ a.theme-link:hover {
     color: #1c1e2e;
     font-size: 1.5rem;
     font-weight: bold;
-    background-image: url("../img/whitish-bg.jpg");
     padding-bottom: 30px;
     padding-top:30px;
     height:40vh;
@@ -284,7 +283,34 @@ a.theme-link:hover {
     -webkit-background-clip:text;
     text-shadow: 2px 5px 5px rgba(255, 255, 255, 0.8);
 }
-
+.book-content h1{
+    letter-spacing: 5px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.text-colored-prev{
+    background-image: linear-gradient(
+            to right,
+            #086991 0,
+            #51afcb 100%,
+            #1d58d7 45%,
+            #244cb4 50%,
+            #10225e 55%,
+            #193288 78%,
+            #1a37a9 100%
+    );
+    color:transparent;
+    -webkit-background-clip:text;
+    text-shadow: 2px 5px 5px rgba(255, 255, 255, 0.8);
+}
+.text-colored{
+    font-family: mirosav, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #f3d520;
+    letter-spacing: 0.5px;
+    text-shadow: 1.2px 1.2px 1.2px red;
+}
 .footer .copyright {
     font-size: 0.875rem;
 }
@@ -369,66 +395,6 @@ a.theme-link:hover {
     font-size: 1.375rem;
     line-height: 1;
 }
-.benefits-section .item-inner {
-    height: 100%;
-}
-.benefits-section .item-icon {
-    font-size: 3rem;
-    color: #ed6524;
-}
-.benefits-section .item-heading {
-    font-size: 1.125rem;
-}
-.content-section .key-points-list {
-    font-size: 1.125rem;
-}
-.content-section .key-points-list li {
-    margin-bottom: 1rem;
-}
-.content-section .fa-check-circle {
-    color: #7fcdb8;
-}
-.audience-section .audience {
-    max-width: 500px;
-}
-.audience-section .item {
-    margin-bottom: 1.5rem;
-}
-.audience-section .item-title {
-    font-size: 1.125rem;
-}
-.audience-section .item-icon {
-    font-size: 1.25rem;
-    color: #7fcdb8;
-}
-.reviews-section .item-inner {
-    height: 100%;
-    position: relative;
-}
-.reviews-section .icon-holder {
-    position: absolute;
-    left: 50%;
-    top: -18px;
-    margin-left: -18px;
-    display: inline-block;
-    width: 36px;
-    height: 36px;
-    background: #f5a782;
-    color: #fff;
-    text-align: center;
-    border-radius: 50%;
-    padding-top: 6px;
-}
-.reviews-section .source-profile {
-    width: 60px;
-}
-.reviews-section .source-info {
-    font-size: 0.875rem;
-}
-.reviews-section {
-    font-style: italic;
-}
-
 blockquote{
     font-family: mirosav, sans-serif;
     font-size: 2em;
@@ -437,27 +403,6 @@ blockquote{
     letter-spacing: 0.5px;
     text-shadow: 1.2px 1.2px 1.2px red;
 
-}
-.author-section {
-    color: #fff;
-}
-.author-section .author-pic {
-    width: 150px;
-    height: 150px;
-}
-.author-section .social-list li {
-    background: rgba(0, 0, 0, 0.1);
-    width: 36px;
-    height: 36px;
-    display: inline-block;
-    border-radius: 50%;
-    padding-top: 6px;
-}
-.author-section .social-list li:hover {
-    background: rgba(0, 0, 0, 0.15);
-}
-.author-section .social-list a {
-    color: #fff;
 }
 .theme-bg-primary a.theme-link {
     color: #fff;
