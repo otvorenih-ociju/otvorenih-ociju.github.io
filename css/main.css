@@ -305,7 +305,7 @@ a.theme-link:hover {
 }
 .text-colored{
     font-family: mirosav, sans-serif;
-    font-size: 1.7em;
+    font-size: 1.4em;
     font-weight: bold;
     color: #f3d520;
     letter-spacing: 0.5px;
@@ -434,6 +434,9 @@ blockquote{
         font-weight: bold;
 
     }
+   .text-colored {
+      font-size:1.3em;
+   }
 }
 @media (max-width: 991.98px) {
     .section-heading {
