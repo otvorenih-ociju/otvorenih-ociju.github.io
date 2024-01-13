@@ -252,6 +252,58 @@ a.theme-link:hover {
 
 
 }
+/*Intro Page Style*/
+.intro-page-body{
+    margin:0;
+    display:flex;
+    height: 100vh;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.intro-page{
+    text-align: center;
+}
+.introM {
+    font-family: mirosav, sans-serif;
+    font-size: 1.8em;
+    margin: 10px 0;
+    border-radius: 5px; /* Optional: Add rounded corners */
+    overflow: hidden;
+}
+.introM:nth-child(1) {
+    color: white; /* Set text color to transparent for the first paragraph */
+    animation: fillAnimation 4s linear forwards; /* Animation properties for the first paragraph */
+}
+
+.introM:nth-child(2) {
+    color: white; /* Set text color to transparent for the second paragraph */
+    animation: fillAnimation 4s linear 2s forwards; /* Animation properties for the second paragraph with a 2s delay */
+}
+.introE {
+    font-family: mirosav, sans-serif;
+    font-size: 1em;
+    margin: 10px 0;
+    border-radius: 5px; /* Optional: Add rounded corners */
+    overflow: hidden;
+}
+.introE:nth-child(1) {
+    color: white; /* Set text color to transparent for the first paragraph */
+    animation: fillAnimation 4s linear forwards; /* Animation properties for the first paragraph */
+}
+
+.introE:nth-child(2) {
+    color: white; /* Set text color to transparent for the second paragraph */
+    animation: fillAnimation 4s linear 2s forwards; /* Animation properties for the second paragraph with a 2s delay */
+}
+
+@keyframes fillAnimation {
+    to {
+        color: #f39c12; /* Set the final text color */
+    }
+}
+
+/*END Intro Page*/
 .logo-text{
     color:darkgoldenrod;
     font-size: 1.5rem;
