@@ -281,8 +281,8 @@ a.theme-link:hover {
     animation: fillAnimation 4s linear 2s forwards; /* Animation properties for the second paragraph with a 2s delay */
 }
 .introE {
-    font-family: mirosav, sans-serif;
-    font-size: 1em;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2em;
     margin: 10px 0;
     border-radius: 5px; /* Optional: Add rounded corners */
     overflow: hidden;
